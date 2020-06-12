@@ -37,6 +37,16 @@ public void loginpageTitleTest(){
 	Assert.assertEquals(title, "Facebook – log in or sign up");
 }
 
+/*@Test(retryAnalyzer=Com.crm.qa.util.WebEvnetListener.class)
+
+public void logotest(){
+	
+	boolean pageImage=loginPage.validategoogleimage();
+	
+	Assert.assertTrue(pageImage);
+}
+*/
+
 @Test(priority=2)
 
 public void logotest(){
@@ -45,6 +55,7 @@ public void logotest(){
 	
 	Assert.assertTrue(pageImage);
 }
+
 
 
 @Test(priority=3)

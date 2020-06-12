@@ -1,16 +1,23 @@
 package Com.crm.qa.util;
 
 import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.testng.IAnnotationTransformer;
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
+import org.testng.annotations.ITestAnnotation;
 
 import Com.crm.qa.base.TestBase;
 
-public class WebEvnetListener  extends TestBase implements WebDriverEventListener  {
-
+public class WebEvnetListener  extends TestBase implements WebDriverEventListener,IRetryAnalyzer,IAnnotationTransformer  {
+int counter=0;
+int retrylimit=2;
 	public WebEvnetListener() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
@@ -99,6 +106,23 @@ catch(IOException e){
 	
 	e.printStackTrace();
 }
+	}
+
+	@Override
+	public boolean retry(ITestResult Result) {
+		if (counter<retrylimit){
+			
+			counter++;
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public void transform(ITestAnnotation Annotaion, Class testclass, Constructor TestConsurtutor,
+			Method TestMehod) {
+		// TODO Auto-generated method stub
+		Annotaion.setRetryAnalyzer(Com.crm.qa.util.WebEvnetListener.class);
 	}
 
 }

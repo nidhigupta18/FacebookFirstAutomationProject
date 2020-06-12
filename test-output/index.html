@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 2 failed,  2 skipped,  6 passed</span>
+                    <span class="method-stats">14 methods, 2 failed,  4 skipped,  8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -121,12 +121,22 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Com.crm.qa.testCases.HomePageTest" hash-for-method="CreateEventTest">CreateEventTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Com.crm.qa.testCases.FriendsPageTest" hash-for-method="ImageLinkClick">ImageLinkClick</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Com.crm.qa.testCases.HomePageTest" hash-for-method="HomeClickTest">HomeClickTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Com.crm.qa.testCases.FriendsPageTest" hash-for-method="ImageLinkClick">ImageLinkClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Com.crm.qa.testCases.LoginPageTest" hash-for-method="logotest">logotest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Com.crm.qa.testCases.LoginPageTest" hash-for-method="logotest">logotest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
@@ -141,6 +151,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Com.crm.qa.testCases.HomePageTest" hash-for-method="ClickOnFriendLinkTest">ClickOnFriendLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Com.crm.qa.testCases.HomePageTest" hash-for-method="CreateEventTest(Event1)">CreateEventTest(Event1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Com.crm.qa.testCases.HomePageTest" hash-for-method="HomeClickTest">HomeClickTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -183,6 +203,48 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">Com.crm.qa.testCases.FriendsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ImageLinkClick">
+                  </a> <!-- ImageLinkClick -->
+                  <span class="method-name">ImageLinkClick</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 11.05 seconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=27.0.1, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b2bf6a24-ab56-48ee-93cc-72db9c7dc51f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
+	at Com.crm.qa.pages.FriendsPage.SelectFriendContact(FriendsPage.java:30)
+	at Com.crm.qa.testCases.FriendsPageTest.ImageLinkClick(FriendsPageTest.java:53)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous1921607139981872136webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous1921607139981872136webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous1921607139981872136webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous1921607139981872136webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">Com.crm.qa.testCases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -192,13 +254,13 @@
                   </a> <!-- logotest -->
                   <span class="method-name">logotest</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;fb_logo img sp_iweMvYcNOXG sx_c594d5&apos;]&quot;}
-Command duration or timeout: 40.22 seconds
+Command duration or timeout: 40.16 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=27.0.1, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: af47d0ea-4bdf-4e6b-9858-116b06b96e52
+Session ID: 4722fcdd-ca2c-4d25-9486-d59cffae04d8
 *** Element info: {Using=xpath, value=//i[@class=&apos;fb_logo img sp_iweMvYcNOXG sx_c594d5&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
@@ -214,23 +276,23 @@ Session ID: af47d0ea-4bdf-4e6b-9858-116b06b96e52
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
 	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
 	at Com.crm.qa.pages.LoginPage.validategoogleimage(LoginPage.java:45)
-	at Com.crm.qa.testCases.LoginPageTest.logotest(LoginPageTest.java:44)
+	at Com.crm.qa.testCases.LoginPageTest.logotest(LoginPageTest.java:54)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;fb_logo img sp_iweMvYcNOXG sx_c594d5&apos;]&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous2699136526657795711webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous2699136526657795711webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous7817313273770756175webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous7817313273770756175webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">Com.crm.qa.testCases.FriendsPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -240,12 +302,12 @@ Driver info: driver.version: unknown
                   </a> <!-- ImageLinkClick -->
                   <span class="method-name">ImageLinkClick</span>
                   <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 10.66 seconds
+Command duration or timeout: 11.23 seconds
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=27.0.1, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e08699a1-3160-4b3e-9f0a-c8fc500be46e
+Session ID: 99731254-1bf8-4690-9c7a-6f9e58cb7dd1
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -260,36 +322,70 @@ Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not curren
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous712549637064385144webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous712549637064385144webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous712549637064385144webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous712549637064385144webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous3177036140102919050webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous3177036140102919050webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous3177036140102919050webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous3177036140102919050webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ImageLinkClick">
+                  </a> <!-- ImageLinkClick -->
+                  <span class="method-name">ImageLinkClick</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.24 seconds
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=27.0.1, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6e38aeef-c69e-44ce-ae27-bf7ac2353e82
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)
+	at Com.crm.qa.pages.FriendsPage.SelectFriendContact(FriendsPage.java:30)
+	at Com.crm.qa.testCases.FriendsPageTest.ImageLinkClick(FriendsPageTest.java:53)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous7557568172652746340webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous7557568172652746340webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous7557568172652746340webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous7557568172652746340webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">Com.crm.qa.testCases.HomePageTest</span>
+              <span class="class-name">Com.crm.qa.testCases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateEventTest">
-                  </a> <!-- CreateEventTest -->
-                  <span class="method-name">CreateEventTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;submit&apos;]&quot;}
-Command duration or timeout: 40.19 seconds
+                  <a name="logotest">
+                  </a> <!-- logotest -->
+                  <span class="method-name">logotest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;fb_logo img sp_iweMvYcNOXG sx_c594d5&apos;]&quot;}
+Command duration or timeout: 40.07 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=27.0.1, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 865fd8f7-b2bb-4988-9131-416625207922
-*** Element info: {Using=xpath, value=//input[@type=&apos;submit&apos;]}
+Session ID: 6b5e5786-6bb2-4e09-8dc9-788865169d67
+*** Element info: {Using=xpath, value=//i[@class=&apos;fb_logo img sp_iweMvYcNOXG sx_c594d5&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -302,35 +398,34 @@ Session ID: 865fd8f7-b2bb-4988-9131-416625207922
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at Com.crm.qa.pages.LoginPage.LoginBtnClick(LoginPage.java:58)
-	at Com.crm.qa.pages.LoginPage.login(LoginPage.java:66)
-	at Com.crm.qa.testCases.HomePageTest.setup(HomePageTest.java:36)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;submit&apos;]&quot;}
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at Com.crm.qa.pages.LoginPage.validategoogleimage(LoginPage.java:45)
+	at Com.crm.qa.testCases.LoginPageTest.logotest(LoginPageTest.java:54)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;fb_logo img sp_iweMvYcNOXG sx_c594d5&apos;]&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous5754659218612246421webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous5754659218612246421webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-... Removed 35 stack frames
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous7795546870220260124webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous7795546870220260124webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="HomeClickTest">
-                  </a> <!-- HomeClickTest -->
-                  <span class="method-name">HomeClickTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;submit&apos;]&quot;}
-Command duration or timeout: 40.19 seconds
+                  <a name="logotest">
+                  </a> <!-- logotest -->
+                  <span class="method-name">logotest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;fb_logo img sp_iweMvYcNOXG sx_c594d5&apos;]&quot;}
+Command duration or timeout: 40.09 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=27.0.1, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 865fd8f7-b2bb-4988-9131-416625207922
-*** Element info: {Using=xpath, value=//input[@type=&apos;submit&apos;]}
+Session ID: 3625dff7-0136-41ee-a4e2-40ff662017ed
+*** Element info: {Using=xpath, value=//i[@class=&apos;fb_logo img sp_iweMvYcNOXG sx_c594d5&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
@@ -343,18 +438,17 @@ Session ID: 865fd8f7-b2bb-4988-9131-416625207922
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at Com.crm.qa.pages.LoginPage.LoginBtnClick(LoginPage.java:58)
-	at Com.crm.qa.pages.LoginPage.login(LoginPage.java:66)
-	at Com.crm.qa.testCases.HomePageTest.setup(HomePageTest.java:36)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;submit&apos;]&quot;}
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at Com.crm.qa.pages.LoginPage.validategoogleimage(LoginPage.java:45)
+	at Com.crm.qa.testCases.LoginPageTest.logotest(LoginPageTest.java:54)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;fb_logo img sp_iweMvYcNOXG sx_c594d5&apos;]&quot;}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Lenovo-PC&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous5754659218612246421webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous5754659218612246421webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-... Removed 35 stack frames
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous7004559383967062816webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/nidhi/AppData/Local/Temp/anonymous7004559383967062816webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -375,6 +469,21 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="CreateEventTest(Event1)">
+                  </a> <!-- CreateEventTest(Event1) -->
+                  <span class="method-name">CreateEventTest</span>
+                  <span class="parameters">(Event1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeClickTest">
+                  </a> <!-- HomeClickTest -->
+                  <span class="method-name">HomeClickTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="UserNameVerifyTest">
                   </a> <!-- UserNameVerifyTest -->
                   <span class="method-name">UserNameVerifyTest</span>
@@ -385,6 +494,21 @@ Driver info: driver.version: unknown
                   <a name="VerifyHomePageTitle">
                   </a> <!-- VerifyHomePageTitle -->
                   <span class="method-name">VerifyHomePageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Com.crm.qa.testCases.FriendsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLabelTest">
+                  </a> <!-- verifyLabelTest -->
+                  <span class="method-name">verifyLabelTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -411,21 +535,6 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Com.crm.qa.testCases.FriendsPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLabelTest">
-                  </a> <!-- verifyLabelTest -->
-                  <span class="method-name">verifyLabelTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -438,6 +547,7 @@ Driver info: driver.version: unknown
 &lt;suite name=&quot;Suite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Com.crm.qa.ExtentReport.ExtentReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;Com.crm.qa.util.WebEvnetListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
@@ -483,52 +593,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logotest')
 data.setCell(0, 2, 'Com.crm.qa.testCases.LoginPageTest')
-data.setCell(0, 3, 41416);
+data.setCell(0, 3, 40768);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ImageLinkClick')
-data.setCell(1, 2, 'Com.crm.qa.testCases.FriendsPageTest')
-data.setCell(1, 3, 26092);
+data.setCell(1, 1, 'logotest')
+data.setCell(1, 2, 'Com.crm.qa.testCases.LoginPageTest')
+data.setCell(1, 3, 40486);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLabelTest')
-data.setCell(2, 2, 'Com.crm.qa.testCases.FriendsPageTest')
-data.setCell(2, 3, 14421);
+data.setCell(2, 1, 'logotest')
+data.setCell(2, 2, 'Com.crm.qa.testCases.LoginPageTest')
+data.setCell(2, 3, 40448);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ClickOnFriendLinkTest')
-data.setCell(3, 2, 'Com.crm.qa.testCases.HomePageTest')
-data.setCell(3, 3, 13904);
+data.setCell(3, 1, 'ImageLinkClick')
+data.setCell(3, 2, 'Com.crm.qa.testCases.FriendsPageTest')
+data.setCell(3, 3, 16498);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'UserNameVerifyTest')
-data.setCell(4, 2, 'Com.crm.qa.testCases.HomePageTest')
-data.setCell(4, 3, 13805);
+data.setCell(4, 1, 'ImageLinkClick')
+data.setCell(4, 2, 'Com.crm.qa.testCases.FriendsPageTest')
+data.setCell(4, 3, 16399);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'VerifyHomePageTitle')
-data.setCell(5, 2, 'Com.crm.qa.testCases.HomePageTest')
-data.setCell(5, 3, 13551);
+data.setCell(5, 1, 'ImageLinkClick')
+data.setCell(5, 2, 'Com.crm.qa.testCases.FriendsPageTest')
+data.setCell(5, 3, 13145);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'lOGIN')
-data.setCell(6, 2, 'Com.crm.qa.testCases.LoginPageTest')
-data.setCell(6, 3, 2646);
+data.setCell(6, 1, 'CreateEventTest')
+data.setCell(6, 2, 'Com.crm.qa.testCases.HomePageTest')
+data.setCell(6, 3, 12920);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginpageTitleTest')
-data.setCell(7, 2, 'Com.crm.qa.testCases.LoginPageTest')
-data.setCell(7, 3, 179);
+data.setCell(7, 1, 'UserNameVerifyTest')
+data.setCell(7, 2, 'Com.crm.qa.testCases.HomePageTest')
+data.setCell(7, 3, 8860);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'CreateEventTest')
+data.setCell(8, 1, 'VerifyHomePageTitle')
 data.setCell(8, 2, 'Com.crm.qa.testCases.HomePageTest')
-data.setCell(8, 3, 0);
+data.setCell(8, 3, 6956);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'HomeClickTest')
+data.setCell(9, 1, 'ClickOnFriendLinkTest')
 data.setCell(9, 2, 'Com.crm.qa.testCases.HomePageTest')
-data.setCell(9, 3, 0);
+data.setCell(9, 3, 6546);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'HomeClickTest')
+data.setCell(10, 2, 'Com.crm.qa.testCases.HomePageTest')
+data.setCell(10, 3, 5861);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyLabelTest')
+data.setCell(11, 2, 'Com.crm.qa.testCases.FriendsPageTest')
+data.setCell(11, 3, 5424);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'lOGIN')
+data.setCell(12, 2, 'Com.crm.qa.testCases.LoginPageTest')
+data.setCell(12, 3, 3192);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginpageTitleTest')
+data.setCell(13, 2, 'Com.crm.qa.testCases.LoginPageTest')
+data.setCell(13, 3, 31);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -561,123 +687,178 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginpageTitleTest</span>
-                <span class="method-start">51676 ms</span>
+                <span class="method-start">41538 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">51860 ms</span>
+                <span class="method-start">41578 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">52531 ms</span>
+                <span class="method-start">41794 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logotest</span>
+                <span class="method-start">72251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">113039 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">113259 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logotest</span>
+                <span class="method-start">136883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">177336 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">177630 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">logotest</span>
-                <span class="method-start">86404 ms</span>
+                <span class="method-start">201394 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">127831 ms</span>
+                <span class="method-start">241883 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">128322 ms</span>
+                <span class="method-start">242074 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">lOGIN</span>
-                <span class="method-start">159435 ms</span>
+                <span class="method-start">263468 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">162085 ms</span>
+                <span class="method-start">266661 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Com.crm.qa.testCases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">162740 ms</span>
+                <span class="method-start">266957 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyHomePageTitle</span>
-                <span class="method-start">206456 ms</span>
+                <span class="method-start">285733 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">220011 ms</span>
+                <span class="method-start">292694 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">221118 ms</span>
+                <span class="method-start">293147 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UserNameVerifyTest</span>
-                <span class="method-start">255136 ms</span>
+                <span class="method-start">317737 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">268948 ms</span>
+                <span class="method-start">326599 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">269913 ms</span>
+                <span class="method-start">327141 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ClickOnFriendLinkTest</span>
-                <span class="method-start">307495 ms</span>
+                <span class="method-start">348340 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">321402 ms</span>
+                <span class="method-start">354888 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setup</span>
-                <span class="method-start">322799 ms</span>
+                <span class="method-start">355296 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">HomeClickTest</span>
+                <span class="method-start">378109 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">383971 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">386533 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreateEventTest(Event1)</span>
+                <span class="method-start">406831 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">419753 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Com.crm.qa.testCases.FriendsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">397062 ms</span>
+                <span class="method-start">420225 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLabelTest</span>
-                <span class="method-start">443634 ms</span>
+                <span class="method-start">444683 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">458060 ms</span>
+                <span class="method-start">450108 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">459387 ms</span>
+                <span class="method-start">450606 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ImageLinkClick</span>
+                <span class="method-start">474811 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">487959 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">488499 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ImageLinkClick</span>
+                <span class="method-start">515117 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">531618 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">532030 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ImageLinkClick</span>
-                <span class="method-start">505864 ms</span>
+                <span class="method-start">559919 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">531963 ms</span>
+                <span class="method-start">576321 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Com.crm.qa.testCases.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">HomeClickTest</span>
-                <span class="method-start">-1591799723657 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">CreateEventTest</span>
-                <span class="method-start">-1591799723657 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
