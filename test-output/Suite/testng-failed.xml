@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Com.crm.qa.ExtentReport.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Com.crm.qa.testCases.HomePageTest">
+        <methods>
+          <include name="quit"/>
+          <include name="CreateEventTest"/>
+          <include name="setup"/>
+          <include name="HomeClickTest"/>
+        </methods>
+      </class> <!-- Com.crm.qa.testCases.HomePageTest -->
+      <class name="Com.crm.qa.testCases.LoginPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="logotest"/>
+        </methods>
+      </class> <!-- Com.crm.qa.testCases.LoginPageTest -->
+      <class name="Com.crm.qa.testCases.FriendsPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="ImageLinkClick"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- Com.crm.qa.testCases.FriendsPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="10" failed="0" ignored="0" total="10" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5373" started-at="2020-06-11T05:07:23Z" finished-at="2020-06-11T05:07:29Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="5373" started-at="2020-06-11T05:07:23Z" finished-at="2020-06-11T05:07:29Z">
+      <class name="Com.crm.qa.testCases.HomePageTest">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="setup" is-config="true" duration-ms="581" started-at="2020-06-11T05:07:25Z" finished-at="2020-06-11T05:07:26Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.HomePageTest.setup(HomePageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="VerifyHomePageTitle()[pri:4, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="VerifyHomePageTitle" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.HomePageTest.setup(HomePageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomePageTitle -->
+        <test-method status="SKIP" signature="quit()[pri:0, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="quit" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="setup" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="UserNameVerifyTest()[pri:5, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="UserNameVerifyTest" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.HomePageTest.setup(HomePageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserNameVerifyTest -->
+        <test-method status="SKIP" signature="quit()[pri:0, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="quit" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="setup" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="ClickOnFriendLinkTest()[pri:6, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="ClickOnFriendLinkTest" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.HomePageTest.setup(HomePageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnFriendLinkTest -->
+        <test-method status="SKIP" signature="quit()[pri:0, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="quit" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="setup" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="HomeClickTest()[pri:7, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="HomeClickTest" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.HomePageTest.setup(HomePageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeClickTest -->
+        <test-method status="SKIP" signature="quit()[pri:0, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="quit" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:26Z" finished-at="2020-06-11T05:07:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="setup" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:28Z" finished-at="2020-06-11T05:07:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="CreateEventTest(java.lang.String)[pri:8, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="CreateEventTest" duration-ms="0" started-at="2020-06-11T05:07:28Z" data-provider="Facebooktestdata" finished-at="2020-06-11T05:07:28Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.HomePageTest.setup(HomePageTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateEventTest -->
+        <test-method status="SKIP" signature="quit()[pri:0, instance:Com.crm.qa.testCases.HomePageTest@4d3167f4]" name="quit" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:28Z" finished-at="2020-06-11T05:07:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- Com.crm.qa.testCases.HomePageTest -->
+      <class name="Com.crm.qa.testCases.FriendsPageTest">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:Com.crm.qa.testCases.FriendsPageTest@ed9d034]" name="setup" is-config="true" duration-ms="533" started-at="2020-06-11T05:07:28Z" finished-at="2020-06-11T05:07:29Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.FriendsPageTest.setup(FriendsPageTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="verifyLabelTest()[pri:9, instance:Com.crm.qa.testCases.FriendsPageTest@ed9d034]" name="verifyLabelTest" duration-ms="0" started-at="2020-06-11T05:07:29Z" finished-at="2020-06-11T05:07:29Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.FriendsPageTest.setup(FriendsPageTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLabelTest -->
+        <test-method status="SKIP" signature="quit()[pri:0, instance:Com.crm.qa.testCases.FriendsPageTest@ed9d034]" name="quit" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:29Z" finished-at="2020-06-11T05:07:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:Com.crm.qa.testCases.FriendsPageTest@ed9d034]" name="setup" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:29Z" finished-at="2020-06-11T05:07:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="ImageLinkClick()[pri:10, instance:Com.crm.qa.testCases.FriendsPageTest@ed9d034]" name="ImageLinkClick" duration-ms="0" started-at="2020-06-11T05:07:29Z" finished-at="2020-06-11T05:07:29Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.FriendsPageTest.setup(FriendsPageTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ImageLinkClick -->
+        <test-method status="SKIP" signature="quit()[pri:0, instance:Com.crm.qa.testCases.FriendsPageTest@ed9d034]" name="quit" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:29Z" finished-at="2020-06-11T05:07:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- Com.crm.qa.testCases.FriendsPageTest -->
+      <class name="Com.crm.qa.testCases.LoginPageTest">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:Com.crm.qa.testCases.LoginPageTest@76a3e297]" name="setup" is-config="true" duration-ms="1743" started-at="2020-06-11T05:07:23Z" finished-at="2020-06-11T05:07:25Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.LoginPageTest.setup(LoginPageTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="loginpageTitleTest()[pri:1, instance:Com.crm.qa.testCases.LoginPageTest@76a3e297]" name="loginpageTitleTest" duration-ms="0" started-at="2020-06-11T05:07:25Z" finished-at="2020-06-11T05:07:25Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.LoginPageTest.setup(LoginPageTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpageTitleTest -->
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:Com.crm.qa.testCases.LoginPageTest@76a3e297]" name="teardown" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:25Z" finished-at="2020-06-11T05:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:Com.crm.qa.testCases.LoginPageTest@76a3e297]" name="setup" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:25Z" finished-at="2020-06-11T05:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="logotest()[pri:2, instance:Com.crm.qa.testCases.LoginPageTest@76a3e297]" name="logotest" duration-ms="0" started-at="2020-06-11T05:07:25Z" finished-at="2020-06-11T05:07:25Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.LoginPageTest.setup(LoginPageTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logotest -->
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:Com.crm.qa.testCases.LoginPageTest@76a3e297]" name="teardown" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:25Z" finished-at="2020-06-11T05:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="SKIP" signature="setup()[pri:0, instance:Com.crm.qa.testCases.LoginPageTest@76a3e297]" name="setup" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:25Z" finished-at="2020-06-11T05:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="lOGIN()[pri:3, instance:Com.crm.qa.testCases.LoginPageTest@76a3e297]" name="lOGIN" duration-ms="0" started-at="2020-06-11T05:07:25Z" finished-at="2020-06-11T05:07:25Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/w3c/dom/ElementTraversal]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+at java.lang.ClassLoader.defineClass1(Native Method)
+at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+at java.security.AccessController.doPrivileged(Native Method)
+at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:205)
+at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:424)
+at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:402)
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:89)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at Com.crm.qa.base.TestBase.initialization(TestBase.java:44)
+at Com.crm.qa.testCases.LoginPageTest.setup(LoginPageTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 64 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lOGIN -->
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:Com.crm.qa.testCases.LoginPageTest@76a3e297]" name="teardown" is-config="true" duration-ms="0" started-at="2020-06-11T05:07:25Z" finished-at="2020-06-11T05:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Com.crm.qa.testCases.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

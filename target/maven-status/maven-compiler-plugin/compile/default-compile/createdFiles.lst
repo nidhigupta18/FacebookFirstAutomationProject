@@ -1,0 +1,8 @@
+Com\crm\qa\pages\LoginPage.class
+Com\crm\qa\ExtentReport\ExtentReportListener.class
+Com\crm\qa\pages\FriendsPage.class
+Com\crm\qa\pages\SignupPage.class
+Com\crm\qa\base\TestBase.class
+Com\crm\qa\util\WebEvnetListener.class
+Com\crm\qa\pages\HomePage.class
+Com\crm\qa\util\TestUtil.class
