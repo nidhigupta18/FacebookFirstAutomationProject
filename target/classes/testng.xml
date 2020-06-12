@@ -6,6 +6,7 @@
 </listeners>
   <test name="Test">
     <classes>
+      
       <class name="Com.crm.qa.testCases.LoginPageTest"/>
    <class name="Com.crm.qa.testCases.HomePageTest"/>
     <class name="Com.crm.qa.testCases.FriendsPageTest"/>

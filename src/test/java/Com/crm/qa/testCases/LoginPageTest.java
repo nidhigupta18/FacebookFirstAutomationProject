@@ -22,6 +22,7 @@ public class LoginPageTest extends TestBase{
 		// TODO Auto-generated constructor stub
 	}
 @BeforeMethod
+
 public void setup() throws IOException{
 	
 	initialization();
